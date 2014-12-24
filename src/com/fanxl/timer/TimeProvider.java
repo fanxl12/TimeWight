@@ -28,6 +28,11 @@ import com.fanxl.timer.utils.GsonTools;
 import com.fanxl.timer.utils.Mark;
 import com.fanxl.timer.utils.Util;
 
+/**
+ * 桌面插件的主界面程序
+ * @author fanxl
+ *
+ */
 public class TimeProvider extends AppWidgetProvider{
 	
 	public LocationClient mLocationClient = null;
