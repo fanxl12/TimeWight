@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -43,7 +42,7 @@ public class TimeProvider extends AppWidgetProvider{
 	private int[] futureIcons = new int[]{R.id.future_one_icon, R.id.future_two_icon, R.id.future_three_icon, R.id.future_four_icon};
 	private int[] futureTexts = new int[]{R.id.future_one_text, R.id.future_two_text, R.id.future_three_text, R.id.future_four_text};
 	
-	@SuppressLint("HandlerLeak") private Handler mHandler = new Handler(){
+	private Handler mHandler = new Handler(){
 		public void handleMessage(android.os.Message msg) {
 			switch (msg.what) {
 			case Mark.SUCCESS:
